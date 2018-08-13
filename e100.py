@@ -8,7 +8,7 @@ def run(n, m):
 if __name__ == '__main__':
     epoch, progress, total = 0, 0, 0;
 
-    while total == 0 or progress / total < 1:
+    while progress <= total:
         progress, total = run(progress, total)
         epoch += 1
 
